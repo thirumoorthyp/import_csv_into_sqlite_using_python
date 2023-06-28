@@ -1,17 +1,9 @@
-import csv, sqlite3
+# Import csv, sqlite3 and time modules
+import csv, sqlite3 , time
 # Import time module
-import time
  
 # record start time
 start = time.time()
- 
-# define a sample code segment
-a = 0
-for i in range(1000):
-    a += (i**100)
- 
-# record end time
-end = time.time()
  
 con = sqlite3.connect("./sqlite_employees.db") # change to 'sqlite:///your_filename.db'
 cur = con.cursor()
@@ -26,5 +18,8 @@ con.commit()
 con.close()
 # print the difference between start
 # and end time in milli. secs
+# record end time
+
+end = time.time()
 print("The time of execution of python program is :",
       (end-start) * 10**3, "ms")
