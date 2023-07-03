@@ -8,8 +8,7 @@ apt-get install python3.8
 ``` shell
 python3 import_csv.py
 ```
-This python code is used to bulk import data from CSV file into the SQLite database.
 
-It took ***250 ms*** to import 5k records
+This python code ***250 ms*** to import 5k records from CSV file into the SQLite database
 
 
